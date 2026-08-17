@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto; /* Ensure vertical scrolling is allowed */
+  }
+}
