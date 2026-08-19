@@ -106,7 +106,7 @@ export default function App() {
                 className="text-neutral-300 hover:text-white hover:scale-105 transition-all relative group py-1"
               >
                 {item}
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-red-600 group-hover:w-full transition-all" />
+                <span className="absolute bottom-0 left-0 w-0 h[2px] bg-red-600 group-hover:w-full transition-all" />
               </a>
             ))}
           </nav>
@@ -168,7 +168,7 @@ export default function App() {
         <section id="section-1" className="h-screen flex items-center justify-center px-6">
           <div className="pointer-events-auto max-w-xl text-center backdrop-blur-md bg-neutral-900/60 p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl">
             <span className="text-xs uppercase tracking-widest text-red-500 font-semibold mb-2 block">The Next Generation</span>
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-4 bg-gradient-to-r from-white via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-4 bg-gradient-to from-white via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
               HYPERDRIVE V10
             </h1>
             <p className="text-neutral-400 text-sm md:text-base leading-relaxed mb-6">
