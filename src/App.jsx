@@ -85,7 +85,7 @@ function CarModel({ carColor }) {
   );
 }
 
-useGLTF.preload(`${import.meta.env.BASE_URL}models/car.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/car.glb`); // ✅ Fixed
 
 export default function App() {
   const [selectedColor, setSelectedColor] = useState(COLOR_PALETTE[0].hex);
