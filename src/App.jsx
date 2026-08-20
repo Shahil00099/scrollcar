@@ -18,7 +18,10 @@ const COLOR_PALETTE = [
 // 3D Car Model Component using BMW M4 file
 function CarModel({ carColor }) {
   const groupRef = useRef();
-  const { scene } = useGLTF('/models/car.glb');
+  
+  // Prepends base path /scrollcar/ automatically on production
+  const modelPath = `${import.meta.env.BASE_URL}models/car.glb`;
+  const { scene } = useGLTF(modelPath);
 
   // Dynamic Color Paint Swap
   useLayoutEffect(() => {
@@ -82,7 +85,7 @@ function CarModel({ carColor }) {
   );
 }
 
-useGLTF.preload('/models/car.glb');
+useGLTF.preload(`${import.meta.env.BASE_URL}models/car.glb`);
 
 export default function App() {
   const [selectedColor, setSelectedColor] = useState(COLOR_PALETTE[0].hex);
